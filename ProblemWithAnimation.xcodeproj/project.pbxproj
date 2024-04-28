@@ -14,6 +14,13 @@
 		44717E892BDE68F1000359CA /* ProblemWithAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44717E882BDE68F1000359CA /* ProblemWithAnimationTests.swift */; };
 		44717E932BDE68F1000359CA /* ProblemWithAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44717E922BDE68F1000359CA /* ProblemWithAnimationUITests.swift */; };
 		44717E952BDE68F1000359CA /* ProblemWithAnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44717E942BDE68F1000359CA /* ProblemWithAnimationUITestsLaunchTests.swift */; };
+		44717EA32BDE691E000359CA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44717EA22BDE691E000359CA /* AppCoordinator.swift */; };
+		44717EA52BDE6987000359CA /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44717EA42BDE6987000359CA /* AuthCoordinator.swift */; };
+		44717EA72BDE69C0000359CA /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44717EA62BDE69C0000359CA /* LoginScreen.swift */; };
+		44717EAA2BDE6A01000359CA /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44717EA92BDE6A01000359CA /* MenuCoordinator.swift */; };
+		44717EAC2BDE6A48000359CA /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44717EAB2BDE6A48000359CA /* MenuScreen.swift */; };
+		44717EAE2BDE6C64000359CA /* EditingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44717EAD2BDE6C63000359CA /* EditingCoordinator.swift */; };
+		44717EB02BDE6C81000359CA /* EditingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44717EAF2BDE6C81000359CA /* EditingScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		44717E8E2BDE68F1000359CA /* ProblemWithAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProblemWithAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44717E922BDE68F1000359CA /* ProblemWithAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemWithAnimationUITests.swift; sourceTree = "<group>"; };
 		44717E942BDE68F1000359CA /* ProblemWithAnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemWithAnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		44717EA22BDE691E000359CA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		44717EA42BDE6987000359CA /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		44717EA62BDE69C0000359CA /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		44717EA92BDE6A01000359CA /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
+		44717EAB2BDE6A48000359CA /* MenuScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
+		44717EAD2BDE6C63000359CA /* EditingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingCoordinator.swift; sourceTree = "<group>"; };
+		44717EAF2BDE6C81000359CA /* EditingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,8 @@
 		44717E762BDE68EF000359CA /* ProblemWithAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				44717EA82BDE69C4000359CA /* Screens */,
+				44717EA12BDE690A000359CA /* Coordinators */,
 				44717E772BDE68EF000359CA /* ProblemWithAnimationApp.swift */,
 				44717E792BDE68EF000359CA /* ContentView.swift */,
 				44717E7B2BDE68F1000359CA /* Assets.xcassets */,
@@ -125,6 +141,27 @@
 				44717E942BDE68F1000359CA /* ProblemWithAnimationUITestsLaunchTests.swift */,
 			);
 			path = ProblemWithAnimationUITests;
+			sourceTree = "<group>";
+		};
+		44717EA12BDE690A000359CA /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				44717EA22BDE691E000359CA /* AppCoordinator.swift */,
+				44717EA42BDE6987000359CA /* AuthCoordinator.swift */,
+				44717EA92BDE6A01000359CA /* MenuCoordinator.swift */,
+				44717EAD2BDE6C63000359CA /* EditingCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		44717EA82BDE69C4000359CA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				44717EA62BDE69C0000359CA /* LoginScreen.swift */,
+				44717EAB2BDE6A48000359CA /* MenuScreen.swift */,
+				44717EAF2BDE6C81000359CA /* EditingScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +294,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44717EA32BDE691E000359CA /* AppCoordinator.swift in Sources */,
+				44717EAC2BDE6A48000359CA /* MenuScreen.swift in Sources */,
+				44717EAA2BDE6A01000359CA /* MenuCoordinator.swift in Sources */,
+				44717EB02BDE6C81000359CA /* EditingScreen.swift in Sources */,
+				44717EAE2BDE6C64000359CA /* EditingCoordinator.swift in Sources */,
 				44717E7A2BDE68EF000359CA /* ContentView.swift in Sources */,
+				44717EA52BDE6987000359CA /* AuthCoordinator.swift in Sources */,
 				44717E782BDE68EF000359CA /* ProblemWithAnimationApp.swift in Sources */,
+				44717EA72BDE69C0000359CA /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

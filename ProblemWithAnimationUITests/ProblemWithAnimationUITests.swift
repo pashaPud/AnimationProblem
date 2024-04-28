@@ -1,9 +1,3 @@
-//
-//  ProblemWithAnimationUITests.swift
-//  ProblemWithAnimationUITests
-//
-//  Created by Павел on 28.04.2024.
-//
 
 import XCTest
 
